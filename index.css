@@ -1,0 +1,262 @@
+.shake-horizontal{animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both}
+.scale-up-hor-right{animation:scale-up-hor-right .4s cubic-bezier(.39,.575,.565,1.000) both}
+@keyframes scale-up-hor-right{0%{transform:scaleX(.4);transform-origin:100% 100%}100%{transform:scaleX(1);transform-origin:100% 100%}}
+@keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}}
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,rgb(1, 1, 58),rgb(48, 48, 143));
+}
+
+#rologo{
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+#body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#Contact a:hover{
+    animation: none;
+}
+@media only screen and (max-width: 600px) {
+    #body h1{
+        position: relative;
+        top: 8rem;
+        left: 1rem;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        line-height: 40px;
+        font-size: 3vw;
+    }
+    #robot{
+        animation: shake-horizontal 1s 10;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 6rem;
+        top: 13rem;
+    }
+    #Contact a{
+        text-decoration: none;
+        position: relative;
+        top: 17rem;
+        color: azure;
+        left: 8rem;
+        border: 5px;
+        border-style: double;
+        border-color: black;
+        padding: 5px;
+        letter-spacing: 5px;
+    }
+    #text{
+        width: 28rem;
+    }
+    #button{
+        position: relative;
+        top: 10rem;
+        left: 10rem;
+        letter-spacing: 2px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 0px;
+        outline: 0px;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        background-image: linear-gradient(to right,black,rgb(224, 224, 233));
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    /* //mobiles */
+}
+@media only screen and (min-width: 600px) {
+    #body h1{
+        position: relative;
+        top: 8rem;
+        left: 4rem;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        line-height: 40px;
+        font-size: 2vw;
+    }
+    #robot{
+        animation: shake-horizontal 1s 10;
+        max-width: 400px;
+        width: 41%;
+        height: auto;
+        position: relative;
+        left: 30rem;
+        bottom: 2rem;
+    }
+    #Contact a{
+        text-decoration: none;
+        position: relative;
+        top: 15rem;
+        color: azure;
+        left: 12rem;
+        border: 5px;
+        border-style: double;
+        border-color: black;
+        padding: 5px;
+        letter-spacing: 5px;
+    }
+    #text{
+        width: 25rem;
+    }
+    #button{
+        position: relative;
+        top: 10rem;
+        left: 16rem;
+        letter-spacing: 2px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 0px;
+        outline: 0px;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        background-image: linear-gradient(to right,black,rgb(224, 224, 233));
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    /* largephone */
+}
+@media only screen and (min-width: 768px) {
+    /* tablets */
+    #body h1{
+        position: relative;
+        top: 8rem;
+        left: 4rem;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        line-height: 40px;
+        font-size: 2vw;
+    }
+    #robot{
+        animation: shake-horizontal 1s 10;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 10rem;
+        top: 6rem;
+    }
+    #Contact a{
+        text-decoration: none;
+        position: relative;
+        top: 15rem;
+        color: azure;
+        left: 20rem;
+        border: 5px;
+        border-style: double;
+        border-color: black;
+        padding: 5px;
+        letter-spacing: 5px;
+    }
+    #text{
+        width: 25rem;
+    }
+    #button{
+        position: relative;
+        top: 10rem;
+        left: 8rem;
+        letter-spacing: 2px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 0px;
+        outline: 0px;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        background-image: linear-gradient(to right,black,rgb(224, 224, 233));
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #body h1{
+        position: relative;
+        top: 8rem;
+        left: 8rem;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        line-height: 40px;
+        font-size: 2vw;
+    }
+    #robot{
+        animation: shake-horizontal 1s 10;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 22rem;
+        top: 3rem;
+    }
+    #Contact a{
+        text-decoration: none;
+        position: relative;
+        top: 10rem;
+        color: azure;
+        left: 35rem;
+        border: 5px;
+        border-style: double;
+        border-color: black;
+        padding: 5px;
+        letter-spacing: 5px;
+    }
+    #text{
+        width: 32rem;
+    }
+    #button{
+        position: relative;
+        top: 10rem;
+        left: 8rem;
+        letter-spacing: 2px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 0px;
+        outline: 0px;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        background-image: linear-gradient(to right,black,rgb(224, 224, 233));
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    /* laptops */
+}
+@media only screen and (min-width: 1200px) {
+    /* large desktops */
+    #body h1{
+        position: relative;
+        top: 8rem;
+        left: 8rem;
+        color: azure;
+        font-family: 'Jost', sans-serif;
+        line-height: 40px;
+        font-size: 2vw;
+    }
+    #robot{
+        animation: shake-horizontal 1s 10;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 22rem;
+        top: 3rem;
+    }
+}
+
+

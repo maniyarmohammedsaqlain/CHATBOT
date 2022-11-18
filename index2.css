@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#hand{animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both}
+@keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}}
+@keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+body{
+    background-image: linear-gradient(to right,rgb(92, 177, 170),rgb(48, 48, 143));
+}
+
+@media only screen and (max-width: 600px) {
+    #main{
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+    #textarea{  
+        height: 2rem;
+        width: 60vw;
+        border: 0px;
+        outline: 0px;
+        margin-left: 20%;
+        margin-top: 5rem;
+        padding-left: 1rem;
+    }
+    #butt{
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 4rem;
+    }
+    #answer{
+        width: 50vw;
+        margin-top: 3rem;
+        margin-left: 25%;
+        font-family: 'Jost', sans-serif;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    #main{
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+    #textarea{  
+        height: 2rem;
+        width: 50vw;
+        border: 0px;
+        outline: 0px;
+        margin-left: 22%;
+        margin-top: 5rem;
+        padding-left: 1rem;
+    }
+    #butt{
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 5rem;
+    }
+    #answer{
+        width: 50vw;
+        margin-top: 3rem;
+        margin-left: 25%;
+        font-family: 'Jost', sans-serif;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    #main{
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+    #textarea{  
+        height: 2rem;
+        width: 50vw;
+        border: 0px;
+        outline: 0px;
+        margin-left: 25%;
+        margin-top: 5rem;
+        padding-left: 1rem;
+    }
+    #butt{
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 5rem;
+    }
+    #answer{
+        width: 36vw;
+        margin-top: 3rem;
+        margin-left: 35%;
+        font-family: 'Jost', sans-serif;
+    }
+
+}
+@media only screen and (min-width: 992px){
+    #main{
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+    #textarea{  
+        height: 2rem;
+        width: 30vw;
+        border: 0px;
+        outline: 0px;
+        margin-left: 36%;
+        margin-top: 5rem;
+        padding-left: 1rem;
+    }
+    #butt{
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 6rem;
+    }
+    #answer{
+        width: 24vw;
+        max-width: 40rem;
+        margin-top: 3rem;
+        margin-left: 39%;
+        font-family: 'Jost', sans-serif;
+    }
+}
